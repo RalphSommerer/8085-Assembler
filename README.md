@@ -124,6 +124,9 @@ Address             Instruction         Hex Code
 0x0004              DB                  0x9C                
 0x0005              HLT                 0x76  
 ```
+#### DW <16-bit-data>, ...
+Writes one or more data words (low byte first) sequentially into memory.
+
 #### \<symbol> EQU <16-bit number>
 Equates a symbol with a number.
 ```asm
