@@ -168,6 +168,8 @@ def lexer(lines):
                         tl.append(["<lbl_def>", word])
                     elif(re.match(r'^(0X)[0-9A-F]+$', word)):
                         tl.append(["<hex_num>", word])
+                    elif(re.match(r'^[0-9][0-9A-F]*H$', word)):
+                        tl.append(["<hex_num>", "0x"+word[:-1]])
                     elif(re.match(r'^[0-9]+$', word)):
                         tl.append(["<dec_num>", word])
                     elif(re.match(r'^(0B)[0-1]+$', word)):
