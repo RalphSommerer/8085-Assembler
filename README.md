@@ -42,7 +42,7 @@ MVI A, 0x5C ; This is a comment
 ```
 
 ### Constants
-Constants are in decimal by default, but hexadecimal and binary are also supported. Constants can also be negative and are stored in two's complement form when assembled.
+Constants are in decimal by default, but hexadecimal and binary are also supported. Constants can also be negative and are stored in two's complement form when assembled. Hexadecimal numbers can be written both using C- and Pascal-style syntax (e.g. 0x7F and 7FH).
 ```asm
 MVI A, 10     ; Decimal constant
 MVI A, 0x0A   ; Hexadecimal constant
